@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta http-equiv="X-UA-compatible" content="IE=edge">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <meta name="viewport" content="width=device-width">
+  <title>SEIKO</title>
+	<link rel="stylesheet" href="css/common.css">
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.visual').bxSlider({
+				minSlides: 1,
+				maxSlides: 1,
+				//slideWidth: 1700,
+				moveSlides: 1,
+				auto: true,
+				autoControls: true,
+				autoControlsCombine: true,
+				autoDelay: 6
+			});
+		});
+		$(document).ready(function(){
+			/*$("ul.gnb > li").eq(0).addClass("selected");
+			$("ul.gnb > li > div").hide(); 
+			//$("ul.gnb > li > div").eq(0).show();
+			$("ul.gnb > li").hover(function(){
+				$("ul.gnb > li").removeClass();
+				$(this).addClass("selected");
+				$("ul.gnb > li > div").hide();
+				$("ul.gnb > li > div").eq($(this).index()).show();
+			});*/
+				$('ul.gnb li').eq(0).hover(function(){
+					$('ul.gnb li').eq(0).addClass('on');
+					$('.gnb-wrap').addClass('on');
+				},function(){
+					$('.gnb-wrap').removeClass('on');
+					$('ul.gnb li').eq(0).removeClass('on');
+			});
+		});
+	</script>
+  </head>
+ <body>
+	<header id="header">
+		<p class="skip-menu"><a href="#container">본문바로가기</a></p>
+		<div id="header-wrap">
+			<div id="header-util">
+				<ul class="util-menu">
+					<li><a href="#">언어</a>
+						<button>
+							<img src="images/common/musica-searcher-1.png" alt="nation">
+						</button>
+					</li>
+					<li><a href="#">찾기</a>
+						<form action="#" method="get">
+							<fieldset>
+								<legend>통합검색</legend>
+								<input type="image" src="images/common/musica-searcher-2.png" alt="search">
+							</fieldset>
+						</form>
+					</li>
+					<li><a href="#">프로필</a>
+						<button>
+							<img src="images/common/musica-searcher-3.png" alt="prefile">
+						</button>
+					</li>
+				</ul>
+			</div>
+			<h1><a href="#">SEIKO</a></h1>
+			<div id="header-gnb">
+				<nav class="gnb-nav">
+					<ul class="gnb">
+						<li><a href="#">COLLECTIONS</a>
+							<div class="gnb-wrap">
+								<div class="gnb-bg-wrap">
+									<h2><a href="#">컬렉션 살펴보기</a></h2>
+									<ul class="gnb-1">
+										<li><a href="#"><img src="images/common/main-gnb-1.png" alt="SSA369J">SSA369J</a></li>
+										<li><a href="#"><img src="images/common/main-gnb-2.png" alt="SNE498J">SNE498J</a></li>
+										<li><a href="#"><img src="images/common/main-gnb-3.png" alt="SSA375J">SSA375J</a></li>
+										<li><a href="#"><img src="images/common/main-gnb-4.png" alt="SRPC93J">SRPC93J</a></li>
+										<li><a href="#"><img src="images/common/main-gnb-5.png" alt="SSA371J">SSA371J</a></li>
+										<li><a href="#"><img src="images/common/main-gnb-6.png" alt="SSA387J">SSA387J</a></li>
+										<li><a href="#"><img src="images/common/main-gnb-7.png" alt="SRPC79J">SRPC79J</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li><a href="#">THE WORLD OF SEIKO</a></li>
+						<li><a href="#">STORES</a></li>
+						<li><a href="#">SUPRORT</a></li>
+						<li><a href="#">NEWS</a></li>
+						<li><a href="#">REVIEW</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<div id="container">
+		<div id="visual-slider-list">
+				<ul class="visual">
+					<li><img src="images/common/visual-list-1.jpg" alt="SOLAR"></li>
+					<li><img src="images/common/visual-list-2.jpg" alt="SOLAR"></li>
+					<li><img src="images/common/visual-list-3.jpg" alt="SOLAR"></li>
+				</ul>
+		</div>
+		<div id="inr">
+			<div class="inr-wrap">
+				<h2>New Collection</h2>
+				<ul>
+					<li><a href="#"><img src="images/main/main-inr-1-1.png" alt="Astron"></a></li>
+					<li><a href="#"><img src="images/main/main-inr-1-2.png" alt="Presage"></a></li>
+					<li><a href="#"><img src="images/main/main-inr-1-3.png" alt="Premier"></a></li>
+					<li><a href="#"><img src="images/main/main-inr-1-4.png" alt="Sports"></a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="content">
+			<h2>The World of Seiko</h2>
+			<div class="content-wrap">
+				<ul>
+					<li class="ct-1"><a href="#">
+						<div class="card">
+							<div class="card-body">
+								<h3 class="card-title">Baselworld 2019</h3>
+								<p class="card-text">새로운 모델들과 생생한 소식을<br>확인해보세요.</p>
+								<p class="card-btn">Learn more</p>
+							</div>
+						</div>
+					</a></li>
+					<li class="ct-2"><a href="#">
+						<div class="card">
+							<div class="card-body">
+								<h3 class="card-title">History</h3>
+								<p class="card-text">글로벌 시계 산업을 이끌어 가는 세이코와<br>세이코 제품에 대한 역사</p>
+								<p class="card-btn">Learn more</p>
+							</div>
+						</div>
+					</a></li>
+					<li class="ct-3"><a href="#">
+						<div class="card">
+							<div class="card-body">
+								<h3 class="card-title">Technology</h3>
+								<p class="card-text">세이코는 감성적 기술을 개발하는데<br>집중합니다.</p>
+								<p class="card-btn">Learn more</p>
+							</div>
+						</div>
+					</a></li>
+					<li class="ct-4"><a href="#">
+						<div class="card">
+							<div class="card-body">
+								<h3 class="card-title">Seiko TV</h3>
+								<p class="card-text">세이코에 대한 더 많은 체험이 기다리고<br>있습니다.</p>
+								<p class="card-btn">Learn more</p>
+							</div>
+						</div>
+					</a></li>
+					<li class="ct-5"><a href="#">
+						<div class="card">
+							<div class="card-body">
+								<h3 class="card-title">Discoveries</h3>
+								<p class="card-text">세이코의 identity를 실천하는<br> 사람들의 기록입니다.</p>
+								<p class="card-btn">Learn more</p>
+							</div>
+						</div>
+					</a></li>
+					<li class="ct-6"><a href="#">
+						<div class="card">
+							<div class="card-body">
+								<h3 class="card-title">Around the World</h3>
+								<p class="card-text">전셰게 세이코의 소식을<br>들어보세요.</p>
+								<p class="card-btn">Learn more</p>
+							</div>
+						</div>
+					</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="bg-story">
+			<div class="text-wrap">
+				<p class="info">THE GRAND SEIKO STORY</p>
+				<p class="title">그랜드 세이코. 미래를 담은 10가지 이야기</p>
+				<p class="text">1960년 그랜드 세이코의 탄생부터 시작된 세계 최고의 시계가 되기 위한 끊임없는 노력의 역사<br>과거와 현재를 이어 미래로 나아가는 이야기 입니다.</p>
+				<p class="btn"><a href="#">MORE</a></p>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div id="footer-wrap">
+			<ul>
+				<li class="f-s1">
+					<h3>Collections</h3>
+					<ul>
+						<li><a href="#">Astron</a></li>
+						<li><a href="#">Presage</a></li>
+						<li><a href="#">Premier</a></li>
+						<li><a href="#">Sports</a></li>
+					</ul>
+				</li>
+				<li class="f-s2">
+					<h3>The World of Seiko</h3>
+					<ul>
+						<li><a href="#">Around the World</a></li>
+						<li><a href="#">SponSorship</a></li>
+						<li><a href="#">History</a></li>
+						<li><a href="#">Technology</a></li>
+					</ul>
+				</li>
+				<li class="f-s3">
+					<h3>News</h3>
+					<ul>
+						<li><a href="#">Seiko TV</a></li>
+					</ul>
+				</li>
+				<li class="f-s4">
+					<h3>Follow Us</h3>
+					<ul>
+						<li class="section-1"><a href="#"><img src="images/common/facebook-logo.png" alt="페이스북"></a></li>
+						<li class="section-2"><a href="#"><img src="images/common/twitter.png" alt="트위터"></a></li>
+						<li class="section-3"><a href="#"><img src="images/common/youtube.png" alt="유튜브"></a></li>
+						<li class="section-4"><a href="#"><img src="images/common/instagram.png" alt="인스타그램"></a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+ </body>
+</html>
+
