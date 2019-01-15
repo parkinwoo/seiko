@@ -19,22 +19,30 @@
 			$('.visual').bxSlider({
 				minSlides: 1,
 				maxSlides: 1,
+				//slideWidth: 1700,
 				moveSlides: 1,
+				auto: true,
+				autoControls: true,
+				autoControlsCombine: true,
+				autoDelay: 6
 			});
 		});
 		$(document).ready(function(){
-			$('ul.gnb li').eq(0).hover(function(){
-				$('ul.gnb li').eq(0).addClass('on');
-				$('.gnb-wrap').addClass('on');
-			},function(){
-				$('.gnb-wrap').removeClass('on');
-				$('ul.gnb li').eq(0).removeClass('on');
-			});
-			$(".util-menu > li + li").click(function(){
-				$("#header-search").addClass("on");
-			});
-			$(".sh-w span.close").click(function(){
-				$("#header-search").removeClass("on");
+			/*$("ul.gnb > li").eq(0).addClass("selected");
+			$("ul.gnb > li > div").hide(); 
+			//$("ul.gnb > li > div").eq(0).show();
+			$("ul.gnb > li").hover(function(){
+				$("ul.gnb > li").removeClass();
+				$(this).addClass("selected");
+				$("ul.gnb > li > div").hide();
+				$("ul.gnb > li > div").eq($(this).index()).show();
+			});*/
+				$('ul.gnb li').eq(0).hover(function(){
+					$('ul.gnb li').eq(0).addClass('on');
+					$('.gnb-wrap').addClass('on');
+				},function(){
+					$('.gnb-wrap').removeClass('on');
+					$('ul.gnb li').eq(0).removeClass('on');
 			});
 		});
 	</script>
@@ -51,9 +59,12 @@
 						</button>
 					</li>
 					<li><a href="#">찾기</a>
-						<button>
-							<img src="images/common/musica-searcher-2.png" alt="search">
-						</button>
+						<form action="#" method="get">
+							<fieldset>
+								<legend>통합검색</legend>
+								<input type="image" src="images/common/musica-searcher-2.png" alt="search">
+							</fieldset>
+						</form>
 					</li>
 					<li><a href="#">프로필</a>
 						<button>
@@ -61,56 +72,6 @@
 						</button>
 					</li>
 				</ul>
-			</div>
-			<div id="header-language">
-				<div class="language">
-					<div class="le-w">Select a region
-						<ul>
-							<li>
-								<button class="le-name">아메리카</button>
-								<ul>
-									<li><a href="#">미국</a></li>
-									<li><a href="#">캐나다</a></li>
-								</ul>
-							</li>
-							<li>
-								<button class="le-name">아시아</button>
-								<ul>
-									<li><a href="#">한국</a></li>
-									<li><a href="#">중국</a></li>
-									<li><a href="#">일본</a></li>
-								</ul>
-							</li>
-							<li>
-								<button class="le-name">유럽</button>
-								<ul>
-									<li><a href="#">독일</a></li>
-									<li><a href="#">스웨덴</a></li>
-									<li><a href="#">덴마크</a></li>
-								</ul>
-							</li>
-							<li>
-								<button class="le-name">태평양</button>
-								<ul>
-									<li><a href="#">뉴질랜드</a></li>
-									<li><a href="#">오스트레일리아</a></li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div id="header-search">
-				<div class="sh-w">
-					<form action="#" method="get">
-						<fieldset>
-							<legend>통합검색</legend>
-							<input type="text" placeholder="search..." name="allsearch" id="allsearch" class="btn-allsearch" title="검색어를 입력해주세요">
-							<input type="submit" class="btn-search" value="search" alt="search">
-						</fieldset>
-					</form>
-					<span class="close"><a href="#"><img src="images/common/close.png" alt="close"></a></span>
-				</div>
 			</div>
 			<h1><a href="#">SEIKO</a></h1>
 			<div id="header-gnb">
@@ -145,9 +106,9 @@
 	<div id="container">
 		<div id="visual-slider-list">
 				<ul class="visual">
-					<li><img src="images/common/visual-list-1-1.png" alt="SOLAR"></li>
-					<li><img src="images/common/visual-list-2-1.png" alt="SOLAR"></li>
-					<li><img src="images/common/visual-list-3-1.png" alt="SOLAR"></li>
+					<li><img src="images/common/visual-list-1.jpg" alt="SOLAR"></li>
+					<li><img src="images/common/visual-list-2.jpg" alt="SOLAR"></li>
+					<li><img src="images/common/visual-list-3.jpg" alt="SOLAR"></li>
 				</ul>
 		</div>
 		<div id="inr">
