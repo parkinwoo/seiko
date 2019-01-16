@@ -24,7 +24,7 @@ img{width: 100%;}
 #header-language ul.le-w-2{margin-top: 10px;}
 #header-language ul.le-w-2 li > button{text-align: left; border: none; width: 100%; font-weight: bold; background-color: white; border-bottom: 1px solid black; padding: 5px;}
 #header-language ul.nation{overflow: hidden; height: 0; text-align: left; transition:.7s}
-#header-language ul.le-w-2 li > button.selected + ul.nation{height: 83px; transition:.7s}
+#header-language ul.le-w-2 li > button.selected + ul.nation{height: 81px; transition:.7s}
 #header-language ul.nation li{font-size: 13px; padding: 5px; border-bottom: 1px solid #ccc; color: #ccc; background-color: white;}
 #header-language ul.nation li a{display: block;}
 #header-language ul.nation li:hover{color: black; border-bottom: 1px solid black;}

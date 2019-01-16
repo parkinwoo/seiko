@@ -30,16 +30,18 @@
 				$('.gnb-wrap').removeClass('on');
 				$('ul.gnb li').eq(0).removeClass('on');
 			});
-			$("#header-language ul.le-w-2 li > button").click(function(){
-				$(this).toggleClass("selected");
-			});
 			$(".util-menu > li").eq(0).click(function(){
 				$("#header-language .language").toggleClass("on");
 				$("#header-search").removeClass("on");
 			});
+			$("#header-language ul.le-w-2 li > button").click(function(){
+				$(this).toggleClass("selected");
+			});
+
 			$(".util-menu > li + li").click(function(){
 				$("#header-search").addClass("on");
 				$("#header-language .language").removeClass("on");
+				$("#header-language ul.le-w-2 li > button").removeClass("selected");
 			});
 			$(".sh-w span.close").click(function(){
 				$("#header-search").removeClass("on");
