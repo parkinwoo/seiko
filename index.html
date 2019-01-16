@@ -31,6 +31,7 @@
 				$('ul.gnb li').eq(0).removeClass('on');
 			});
 			$(".util-menu > li").eq(0).click(function(){
+				$("#header-language ul.le-w-2 li > button").removeClass("selected");
 				$("#header-language .language").toggleClass("on");
 				$("#header-search").removeClass("on");
 			});
