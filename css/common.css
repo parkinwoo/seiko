@@ -18,7 +18,16 @@ img{width: 100%;}
 #header-util > ul > li:hover > button{margin-top: 0;}
 #header-wrap h1{width: 100px; line-height: 50px;font-size: 36px; float: left;margin-right: 8%;} 
 #header-language{max-width: 1200px; margin: 0 auto; position: relative;}
-#header-language .language{position: absolute; bottom: #fff; z-index: 2; right: 0;}
+#header-language .language{position: absolute;top: 15px; z-index: 2; right: 28px;color: white; width: 200px; background-color: black; border: 5px solid white;display: none;}
+#header-language .language.on{display: block;}
+#header-language div.le-w{text-align: center; padding-top: 10px; font-size: 15px;}
+#header-language ul.le-w-2{margin-top: 10px;}
+#header-language ul.le-w-2 li > button{text-align: left; border: none; width: 100%; font-weight: bold; background-color: white; border-bottom: 1px solid black; padding: 5px;}
+#header-language ul.nation{overflow: hidden; height: 0; text-align: left; transition:.7s}
+#header-language ul.le-w-2 li > button.selected + ul.nation{height: 83px; transition:.7s}
+#header-language ul.nation li{font-size: 13px; padding: 5px; border-bottom: 1px solid #ccc; color: #ccc; background-color: white;}
+#header-language ul.nation li a{display: block;}
+#header-language ul.nation li:hover{color: black; border-bottom: 1px solid black;}
 #header-search{width: 100%; background-color: #fff; position: absolute; top: 100px; left: 0; height: 70px;z-index: -1;}
 #header-search.on{z-index: 2;}
 #header-search .sh-w{max-width: 1200px; margin: 0 auto; position: relative;}

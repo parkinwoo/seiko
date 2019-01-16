@@ -30,8 +30,16 @@
 				$('.gnb-wrap').removeClass('on');
 				$('ul.gnb li').eq(0).removeClass('on');
 			});
+			$("#header-language ul.le-w-2 li > button").click(function(){
+				$(this).toggleClass("selected");
+			});
+			$(".util-menu > li").eq(0).click(function(){
+				$("#header-language .language").toggleClass("on");
+				$("#header-search").removeClass("on");
+			});
 			$(".util-menu > li + li").click(function(){
 				$("#header-search").addClass("on");
+				$("#header-language .language").removeClass("on");
 			});
 			$(".sh-w span.close").click(function(){
 				$("#header-search").removeClass("on");
@@ -64,18 +72,20 @@
 			</div>
 			<div id="header-language">
 				<div class="language">
-					<div class="le-w">Select a region
-						<ul>
+					<div class="le-w">
+						<p>Select a region</p>
+						<ul class="le-w-2">
 							<li>
 								<button class="le-name">아메리카</button>
-								<ul>
+								<ul class="nation">
 									<li><a href="#">미국</a></li>
 									<li><a href="#">캐나다</a></li>
+									<li><a href="#">그린란드</a></li>
 								</ul>
 							</li>
 							<li>
 								<button class="le-name">아시아</button>
-								<ul>
+								<ul class="nation">
 									<li><a href="#">한국</a></li>
 									<li><a href="#">중국</a></li>
 									<li><a href="#">일본</a></li>
@@ -83,7 +93,7 @@
 							</li>
 							<li>
 								<button class="le-name">유럽</button>
-								<ul>
+								<ul class="nation">
 									<li><a href="#">독일</a></li>
 									<li><a href="#">스웨덴</a></li>
 									<li><a href="#">덴마크</a></li>
@@ -91,9 +101,10 @@
 							</li>
 							<li>
 								<button class="le-name">태평양</button>
-								<ul>
+								<ul class="nation">
 									<li><a href="#">뉴질랜드</a></li>
 									<li><a href="#">오스트레일리아</a></li>
+									<li><a href="#">포트모르즈비</a></li>
 								</ul>
 							</li>
 						</ul>
