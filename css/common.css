@@ -16,7 +16,7 @@ img{width: 100%;}
 #header-util > ul > li > button{border: none; background: none; margin-top: 20px;}
 #header-util > ul > li:hover > a{margin-top: 0;}
 #header-util > ul > li:hover > button{margin-top: 0;}
-#header-wrap h1{width: 100px; line-height: 50px;font-size: 36px; float: left;margin-right: 8%;} 
+#header-wrap > h1 > a{display: block; width: 150px; font-size: 27px; float: left; background: url(../images/common/main-logo.png) 0 0 no-repeat; margin-right: 5%; text-indent: -9999px; margin-top: 5px; } 
 #header-language{max-width: 1200px; margin: 0 auto; position: relative;}
 #header-language .language{position: absolute;top: 15px; z-index: 2; right: 28px;color: white; width: 200px; background-color: black; border: 5px solid white;display: none;}
 #header-language .language.on{display: block;}

@@ -39,7 +39,7 @@
 				$(this).toggleClass("selected");
 			});
 
-			$(".util-menu > li + li").click(function(){
+			$(".util-menu > li").eq(1).click(function(){
 				$("#header-search").addClass("on");
 				$("#header-language .language").removeClass("on");
 				$("#header-language ul.le-w-2 li > button").removeClass("selected");
