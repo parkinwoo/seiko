@@ -12,23 +12,21 @@
   <meta name="viewport" content="width=device-width">
   <title>SEIKO</title>
 	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/main.css">
 	<script src="../js/jquery-3.3.1.min.js"></script>
-	<script src="../js/common.js"></script>
 	<script>
 		$(document).ready(function(){
-			$('.visual').bxSlider({
+			$(".visual").bxSlider({
 				minSlides: 1,
 				maxSlides: 1,
-				moveSlides: 1,
+				moveSlides: 1
 			});
-		});
-		$(document).ready(function(){
-			$('ul.gnb li').eq(0).hover(function(){
-				$('ul.gnb li').eq(0).addClass('on');
-				$('.gnb-wrap').addClass('on');
+			$("ul.gnb li").eq(0).hover(function(){
+				$("ul.gnb li").eq(0).addClass("on");
+				$(".gnb-wrap").addClass("on");
 			},function(){
-				$('.gnb-wrap').removeClass('on');
-				$('ul.gnb li').eq(0).removeClass('on');
+				$(".gnb-wrap").removeClass("on");
+				$("ul.gnb li").eq(0).removeClass("on");
 			});
 			$(".util-menu > li").eq(0).click(function(){
 				$("#header-language ul.le-w-2 li > button").removeClass("selected");
@@ -38,7 +36,6 @@
 			$("#header-language ul.le-w-2 li > button").click(function(){
 				$(this).toggleClass("selected");
 			});
-
 			$(".util-menu > li").eq(1).click(function(){
 				$("#header-search").addClass("on");
 				$("#header-language .language").removeClass("on");
@@ -51,6 +48,7 @@
 	</script>
   </head>
  <body>
+<!-- header -->
 	<header id="header">
 		<p class="skip-menu"><a href="#container">본문바로가기</a></p>
 		<div id="header-wrap">
@@ -120,7 +118,7 @@
 						<fieldset>
 							<legend>통합검색</legend>
 							<input type="text" placeholder="search..." name="allsearch" id="allsearch" class="btn-allsearch" title="검색어를 입력해주세요">
-							<input type="submit" class="btn-search" value="search" alt="search">
+							<input type="submit" class="btn-search" value="search">
 						</fieldset>
 					</form>
 					<span class="close"><a href="#"><img src="images/common/close.png" alt="close"></a></span>
@@ -156,6 +154,8 @@
 			</div>
 		</div>
 	</header>
+<!-- //header -->
+<!-- container -->
 	<div id="container">
 		<div id="visual-slider-list">
 				<ul class="visual">
@@ -245,6 +245,8 @@
 			</div>
 		</div>
 	</div>
+<!-- //container -->
+<!-- footer -->
 	<div id="footer">
 		<div id="footer-wrap">
 			<ul>
@@ -284,6 +286,7 @@
 			</ul>
 		</div>
 	</div>
+<!-- //footer -->
  </body>
 </html>
 
