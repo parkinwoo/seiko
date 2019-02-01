@@ -52,3 +52,27 @@
 #bg-story p.text{margin-bottom: 35px; font-size: 18px;}
 #bg-story p.btn{width: 100px; border: 2px solid #fff; margin: 0 auto; padding: 4px; font-size: 14px;}
 #bg-story p.btn:hover{background-color: white; color: #1a1a1a; transition: .7s; text-shadow:none; font-weight: bold;}
+
+
+
+
+@media (max-width: 1520px){
+	#content .content-wrap > ul{max-width: 1200px;}
+	#content .content-wrap > ul > li{height: 300px;}
+	#content .content-wrap h3.card-title{padding-top: 210px;}
+	#content .content-wrap > ul > li:hover h3.card-title, #content .content-wrap > ul > li:focus h3.card-title{padding-top: 170px;}
+}
+@media (max-width: 1199px){
+
+}
+@media (max-width: 1022px){
+
+}
+@media (max-width: 931px){
+
+@media (max-width: 850px){
+
+@media (max-width: 619px){
+
+}
+@media (max-width: 434px){
