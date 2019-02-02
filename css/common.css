@@ -69,3 +69,20 @@ img{width: 100%;}
 #footer-wrap > ul > li.f-s4 > ul > li{float: left; width: 24px;height: 24px; margin-right: 15px;}
 
 
+@media (max-width: 1520px){
+}
+@media (max-width: 1199px){
+
+}
+@media (max-width: 1022px){
+}
+@media (max-width: 900px){
+	#footer-wrap > ul > li.f-s3{display: none;}
+	#footer-wrap > ul > li{width: 33%;}
+}
+@media (max-width: 750px){
+}
+@media (max-width: 650px){
+	#footer-wrap > ul > li > h3,#footer-wrap > ul > li > ul{display: none;}
+}
+@media (max-width: 434px){
