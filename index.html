@@ -45,6 +45,10 @@
 			$(".sh-w span.close").click(function(){
 				$("#header-search").removeClass("on");
 			});
+			$(".gnb-btn").click(function(){
+				$(this).toggleClass("on");
+				$('#header-gnb > nav > ul').toggleClass("on");
+			});
 		});
 	</script>
   </head>
@@ -53,7 +57,6 @@
 	<header id="header">
 		<p class="skip-menu"><a href="#container">본문바로가기</a></p>
 		<div id="header-wrap">
-			<div class="header-menu-bar"></div>
 			<div id="header-util">
 				<ul class="util-menu">
 					<li><a href="#">언어</a>
@@ -127,6 +130,7 @@
 				</div>
 			</div>
 			<h1><a href="#">SEIKO</a></h1>
+			<button class="gnb-btn"></button>
 			<div id="header-gnb">
 				<nav class="gnb-nav">
 					<ul class="gnb">

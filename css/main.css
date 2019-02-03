@@ -11,6 +11,8 @@
 .bx-wrapper .bx-next{background: url(../images/common/next.png) 0 0 no-repeat; right: 0;}
 .bx-wrapper .bx-next:hover{background: url(../images/common/next-on.png) 0 0 no-repeat; right: 0;}
 .bx-wrapper .bx-next:hover, .bx-wrapper .bx-next:focus{background-position: 0 0;}
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto{bottom: -60px;}
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus{background-color: #88969E;}
 #inr{margin-bottom: 300px; margin-top: 150px;}
 #inr .inr-wrap{max-width: 1200px; margin: 0 auto;}
 #inr .inr-wrap h2{font-size: 35px;color: #000; text-align: center; margin-bottom: 80px;}
