@@ -35,7 +35,7 @@ img{width: 100%;}
 #header-search .sh-w input.btn-allsearch{width: 350px; margin-right: 5px; padding-left: 5px;}
 #header-search .sh-w input.btn-search{background-color: black; color: white; width: 60px; border: none; cursor: pointer;}
 #header-search .sh-w span{width: 20px; height: 20px; position: absolute; right: 0; top: 0; margin-top: 25px; margin-right: 25px;}
-#header-gnb > nav > ul{font-size: 15px; display: flex; width: 750px;}
+#header-gnb > nav > ul{font-size: 15px; max-width: 750px; margin: 0 auto;}
 #header-gnb > nav > ul:after{content:""; display: block; clear: both;}
 #header-gnb > nav > ul > li{float: left; margin-left: 55px; padding-top: 10px;}
 #header-gnb > nav > ul > li:first-child{margin: 0;}
@@ -48,7 +48,7 @@ img{width: 100%;}
 #header-gnb div.gnb-wrap > div > h2{text-align: left; padding-top: 30px; text-shadow:1px 1px 1px #ccc;}
 #header-gnb div.gnb-wrap > div > ul{margin-top: 25px;}
 #header-gnb div.gnb-wrap > div > ul:after{content:""; display: block; clear: both;}
-#header-gnb div.gnb-wrap > div > ul > li{float: left; width: 13%; min-height: 150px; margin-right: 18px;}
+#header-gnb div.gnb-wrap > div > ul > li{float: left; width: 13%; min-height: 150px; margin-right: 15px;}
 #header-gnb div.gnb-wrap > div > ul > li:last-child{margin: 0;}
 #header-gnb div.gnb-wrap > div > ul > li > a > img{margin-bottom: 10px;}
 #header-gnb div.gnb-wrap > div > ul > li:hover > a > img{width: 110%; transition: .5s;transform: translate(-2.5%,-2.5%);}
@@ -72,7 +72,18 @@ img{width: 100%;}
 @media (max-width: 1520px){
 }
 @media (max-width: 1199px){
-
+	#header-gnb{width: 100%; position: absolute;  z-index: 1;}
+	#header-wrap > h1 > a{display: inline-block; float: none; text-align: center;}
+	#header-gnb > nav > ul{padding-top: 30px; font-size: 14px; max-width: 717px;}
+	#header-gnb div.gnb-wrap{top: 85px;}
+	#header-gnb div.gnb-wrap > div > h2{text-align: center;}
+	#header-gnb div.gnb-wrap > div > ul{margin: 25px auto; max-width: 800px;}
+	#header-gnb div.gnb-wrap > div > ul > li{margin-right: 0; width: 20%;}
+	#header-gnb div.gnb-wrap > div > ul > li:nth-child(6),#header-gnb div.gnb-wrap > div > ul > li:nth-child(7){display: none;}
+	#header-util > ul > li{padding-top: 20px;}
+	#header-util > ul > li > a{margin-top: -50px;}
+	#header-util > ul > li > button{margin-top: 50px;}
+	#header-language .language{top: 35px;}
 }
 @media (max-width: 1022px){
 }
