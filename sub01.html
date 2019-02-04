@@ -14,14 +14,10 @@
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/sub01.css">
 	<script src="../js/jquery-3.3.1.min.js"></script>
 	<script>
 		$(document).ready(function(){
-			$(".visual").bxSlider({
-				minSlides: 1,
-				maxSlides: 1,
-				moveSlides: 1
-			});
 			$("ul.gnb li").eq(0).hover(function(){
 				$("ul.gnb li").eq(0).addClass("on");
 				$(".gnb-wrap").addClass("on");
@@ -70,9 +66,9 @@
 						</button>
 					</li>
 					<li><a href="sub01.html">프로필</a>
-						<button><a href="sub01.html">
+						<button>
 							<img src="images/common/musica-searcher-3.png" alt="prefile">
-						</button></a>
+						</button>
 					</li>
 				</ul>
 			</div>
@@ -161,97 +157,41 @@
 		</div>
 	</header>
 <!-- //header -->
-<!-- container -->
-	<div id="container">
-		<div id="visual-slider-list">
-				<ul class="visual">
-					<li><a href="#"><img src="images/common/visual-list-1-1.png" alt="SOLAR"></a></li>
-					<li><a href="#"><img src="images/common/visual-list-2-1.png" alt="SOLAR"></a></li>
-					<li><a href="#"><img src="images/common/visual-list-3-1.png" alt="SOLAR"></a></li>
-				</ul>
-		</div>
-		<div id="inr">
-			<div class="inr-wrap">
-				<h2>New Collection</h2>
-				<ul>
-					<li><a href="#"><img src="images/main/main-inr-1-1.png" alt="Astron"></a></li>
-					<li><a href="#"><img src="images/main/main-inr-1-2.png" alt="Presage"></a></li>
-					<li><a href="#"><img src="images/main/main-inr-1-3.png" alt="Premier"></a></li>
-					<li><a href="#"><img src="images/main/main-inr-1-4.png" alt="Sports"></a></li>
-				</ul>
+	<div id="container-bg">
+		<div id="container">
+			<div id="content-h">
+				<div class="ch-1">
+					<ul>
+						<li><a href="index.html">home</a></li>
+						<li>profile</li>
+					</ul>
+				</div>
 			</div>
-		</div>
-		<div id="content">
-			<h2>The World of Seiko</h2>
-			<div class="content-wrap">
-				<ul>
-					<li class="ct-1"><a href="#">
-						<div class="card">
-							<div class="card-body">
-								<h3 class="card-title">Baselworld 2019</h3>
-								<p class="card-text">새로운 모델들과 생생한 소식을<br>확인해보세요.</p>
-								<p class="card-btn">Learn more</p>
-							</div>
+			<div id="content-b">
+				<form action="#" method="post">
+					<fieldset>
+						<legend>seiko login</legend>
+						<h2>My Seiko 방문을 환영합니다.</h2>
+						<p class="f-1">이미 회원이신가요?</p>
+						<div class="id-w">
+							<p class="f-2">아이디</p>
+							<p class="login-1"><label for="user-id"></label>
+							<input type="text" id="user-id" placeholder="id" name="user-id" maxlength="12"></p>
 						</div>
-					</a></li>
-					<li class="ct-2"><a href="#">
-						<div class="card">
-							<div class="card-body">
-								<h3 class="card-title">History</h3>
-								<p class="card-text">글로벌 시계 산업을 이끌어 가는 세이코와<br>세이코 제품에 대한 역사</p>
-								<p class="card-btn">Learn more</p>
-							</div>
+						<div class="pw-w">
+							<p class="f-3">비밀번호</p>
+							<p class="login-2"><label for="user-pw"></label>
+							<input type="password" id="user-pw" placeholder="password" name="user-pw" maxlength="12"></p>
 						</div>
-					</a></li>
-					<li class="ct-3"><a href="#">
-						<div class="card">
-							<div class="card-body">
-								<h3 class="card-title">Technology</h3>
-								<p class="card-text">세이코는 감성적 기술을 개발하는데<br>집중합니다.</p>
-								<p class="card-btn">Learn more</p>
-							</div>
-						</div>
-					</a></li>
-					<li class="ct-4"><a href="#">
-						<div class="card">
-							<div class="card-body">
-								<h3 class="card-title">Seiko TV</h3>
-								<p class="card-text">세이코에 대한 더 많은 체험이 기다리고<br>있습니다.</p>
-								<p class="card-btn">Learn more</p>
-							</div>
-						</div>
-					</a></li>
-					<li class="ct-5"><a href="#">
-						<div class="card">
-							<div class="card-body">
-								<h3 class="card-title">Discoveries</h3>
-								<p class="card-text">세이코의 identity를 실천하는<br> 사람들의 기록입니다.</p>
-								<p class="card-btn">Learn more</p>
-							</div>
-						</div>
-					</a></li>
-					<li class="ct-6"><a href="#">
-						<div class="card">
-							<div class="card-body">
-								<h3 class="card-title">Around the World</h3>
-								<p class="card-text">전셰게 세이코의 소식을<br>들어보세요.</p>
-								<p class="card-btn">Learn more</p>
-							</div>
-						</div>
-					</a></li>
-				</ul>
+						<a href="#">아이디 찾기</a>
+						<a href="#">비밀번호 찾기</a>
+					</fieldset>
+				</form>
+				<button type="submit" id="submit-b" name="submit-b">로그인하기</button>
 			</div>
-		</div>
-		<div id="bg-story">
-			<div class="text-wrap">
-				<p class="info">THE GRAND SEIKO STORY</p>
-				<p class="title">그랜드 세이코. 미래를 담은 10가지 이야기</p>
-				<p class="text">1960년 그랜드 세이코의 탄생부터 시작된 세계 최고의 시계가 되기 위한 끊임없는 노력의 역사<br>과거와 현재를 이어 미래로 나아가는 이야기 입니다.</p>
-				<p class="btn"><a href="#">MORE</a></p>
-			</div>
+			<div id="content-f"></div>
 		</div>
 	</div>
-<!-- //container -->
 <!-- footer -->
 	<div id="footer">
 		<div id="footer-wrap">
