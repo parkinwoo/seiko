@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+/* container */
+#container-wrap{width: 100%; overflow: hidden;}
+#container-l{width: 30%; height: 500px; background-color: #ccc; float: left;}
+#container-r{width: 70%; height: 500px; background-color: yellow; float: right;}
+#content-h ul{padding-top: 20px;}
+#content-h ul:after{content:""; display: block; clear: both;}
+#content-h ul > li:nth-child(1) a{font-Wsize: 16px; border-bottom: 1px solid white; margin-left: 30px;}
+#content-h ul > li:nth-child(1):after{content:">"; display: inline-block; padding-left: 15px;}
+#content-h ul > li{float: left; margin-right: 15px; font-size: 15px;}
+
+
+@media (max-width: 1199px){
+#content-h{display: none;}
+#content-b{margin-top: 40px;}
+
+}
+@media (max-width: 650px){
+	#content-b fieldset h2,#content-f h2{font-size: 20px;}
+	#content-b fieldset p.f-1{font-size: 18px; padding-bottom: 25px;}
+	#content-b fieldset p.f-2, #content-b fieldset p.f-3,#content-b fieldset .id-w, #content-b fieldset .pw-w, #content-b fieldset .id-pw{font-size: 13px;}
+	#content-f{margin-top: 40px}
+	#content-f p{width: 340px; margin: 0 auto;}
+}
+

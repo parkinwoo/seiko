@@ -12,11 +12,13 @@
 #content-b fieldset{padding-top: 35px;}
 #content-b fieldset h2{font-size: 45px; padding-bottom: 10px; letter-spacing: 2px;}
 #content-b fieldset p.f-1{font-size: 25px; letter-spacing: 2px; padding-bottom: 50px;}
-#content-b fieldset .id-w,#content-b fieldset .pw-w,#content-b fieldset .id-pw{margin: 0 auto; max-width: 266px; padding-bottom: 15px; text-align: left;}
+#content-b fieldset .id-w,#content-b fieldset .pw-w{margin: 0 auto; max-width: 266px; padding-bottom: 15px; text-align: left;}
 #content-b fieldset p.f-2,#content-b fieldset p.f-3{ padding-bottom: 5px; font-size: 15px; letter-spacing: 1px;}
 #user-id,#user-pw{font-size: 20px; padding: 5px;}
+#content-b fieldset .id-pw{text-align: center;}
 #content-b fieldset .id-pw a:first-child:after{content: "";display: inline-block;width: 1px;height: 14px;background: white;padding-top: -2px;vertical-align: middle;margin-left: 10px;}
 #content-b fieldset .id-pw a{margin-right: 10px;}
+#content-b fieldset .id-pw a:nth-child(2){margin-right: 0;}
 #submit-b{border: none; margin-top: 30px; width: 100px; height: 40px; font-family: "Arial"; font-weight: bold; color: white; background: #484442;}
 #submit-b:hover{background-color: black;}
 #content-f{text-align: center; margin-top: 50px; margin-bottom: 35px}
@@ -31,5 +33,16 @@
 #content-f .nav li > a:after{right: 0; top: 4px; border-right: 3px solid #858484; border-top: 3px solid #3b3939; transform: translate(100%, -50%);}
 #content-f .nav li > a:hover:before,#content-f .nav li > a:hover:after{transform: translate(0%, 0%); opacity: 1;}
 
+@media (max-width: 1199px){
+#content-h{display: none;}
+#content-b{margin-top: 40px;}
 
+}
+@media (max-width: 650px){
+	#content-b fieldset h2,#content-f h2{font-size: 20px;}
+	#content-b fieldset p.f-1{font-size: 18px; padding-bottom: 25px;}
+	#content-b fieldset p.f-2, #content-b fieldset p.f-3,#content-b fieldset .id-w, #content-b fieldset .pw-w, #content-b fieldset .id-pw{font-size: 13px;}
+	#content-f{margin-top: 40px}
+	#content-f p{width: 340px; margin: 0 auto;}
+}
 
