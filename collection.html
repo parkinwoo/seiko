@@ -46,7 +46,20 @@
 				$(this).toggleClass("on");
 				$('#header-gnb > nav > ul').toggleClass("on");
 			});
-
+			var $btnNum=0;
+			$(".close").click(function(){
+				if($btnNum == 0){
+					$("#container-bg .ct-l").css('width','0%');
+					$("#container-bg .ct-r").css('width','100%');
+					$("#container-bg .close-btn").css('background','url(images/collections/icon.png) 2px 2px no-repeat');
+					$btnNum = 1;
+				} else{
+					$("#container-bg .ct-l").css('width','25%');
+					$("#container-bg .ct-r").css('width','75%');
+					$("#container-bg .close-btn").css('background','url(images/collections/icon-on.png) 2px 2px no-repeat');
+					$btnNum = 0;
+				}
+			});
 		});
 	</script>
   </head>
@@ -68,11 +81,11 @@
 						</button>
 					</li>
 					<li><a href="sub01.html">프로필</a>
-						<button>
+						<button><a href="sub01.html">
 							<img src="images/common/musica-searcher-3.png" alt="prefile">
-						</button>
+						</button></a>
 					</li>
-				</ul>
+				</ul> 
 			</div>
 			<div id="header-language">
 				<div class="language">
@@ -132,18 +145,18 @@
 			<div id="header-gnb">
 				<nav class="gnb-nav">
 					<ul class="gnb">
-						<li><a href="#">COLLECTIONS</a>
+						<li><a href="collection.html">COLLECTIONS</a>
 							<div class="gnb-wrap">
 								<div class="gnb-bg-wrap">
-									<h2><a href="#">컬렉션 살펴보기</a></h2>
+									<h2><a href="collection.html">컬렉션 살펴보기</a></h2>
 									<ul class="gnb-1">
-										<li><a href="#"><img src="images/common/main-gnb-1.png" alt="SSA369J">SSA369J</a></li>
-										<li><a href="#"><img src="images/common/main-gnb-2.png" alt="SNE498J">SNE498J</a></li>
-										<li><a href="#"><img src="images/common/main-gnb-3.png" alt="SSA375J">SSA375J</a></li>
-										<li><a href="#"><img src="images/common/main-gnb-4.png" alt="SRPC93J">SRPC93J</a></li>
-										<li><a href="#"><img src="images/common/main-gnb-5.png" alt="SSA371J">SSA371J</a></li>
-										<li><a href="#"><img src="images/common/main-gnb-6.png" alt="SSA387J">SSA387J</a></li>
-										<li><a href="#"><img src="images/common/main-gnb-7.png" alt="SRPC79J">SRPC79J</a></li>
+										<li><a href="collection.html"><img src="images/common/main-gnb-1.png" alt="SSA369J">SSA369J</a></li>
+										<li><a href="collection.html"><img src="images/common/main-gnb-2.png" alt="SNE498J">SNE498J</a></li>
+										<li><a href="collection.html"><img src="images/common/main-gnb-3.png" alt="SSA375J">SSA375J</a></li>
+										<li><a href="collection.html"><img src="images/common/main-gnb-4.png" alt="SRPC93J">SRPC93J</a></li>
+										<li><a href="collection.html"><img src="images/common/main-gnb-5.png" alt="SSA371J">SSA371J</a></li>
+										<li><a href="collection.html"><img src="images/common/main-gnb-6.png" alt="SSA387J">SSA387J</a></li>
+										<li><a href="collection.html"><img src="images/common/main-gnb-7.png" alt="SRPC79J">SRPC79J</a></li>
 									</ul>
 								</div>
 							</div>
@@ -159,20 +172,95 @@
 		</div>
 	</header>
 <!-- //header -->
-	<div id="container-wrap">
-		<div id="container-l">
-			<div id="container">
-				<div id="content-h">
-					<div class="ch-1">
-						<ul>
-							<li><a href="index.html">home</a></li>
-							<li>collections</li>
-						</ul>
-					</div>
-				</div>
+	<div id="container-bg">
+		<div class="ct-l">
+			<div class="ct-l-h">
+				<h2>Collections</h2>
+				<ul>
+					<li><a href="#">Astron</a></li>
+					<li><a href="#">Presage</a></li>
+					<li><a href="#">Premier</a></li>
+					<li><a href="#">Sports</a></li>
+					<li><a href="#">Conceptual</a></li>
+					<li><a href="#">Other collections</a></li>
+				</ul>
+			</div>
+			<div class="close">
+				<button class="close-btn"></button>
 			</div>
 		</div>
-		<div id="container-r">
+		<div class="ct-r">
+			<div class="ct-r-h">
+				<ul>
+					<li><a href="index.html">home</a></li>
+					<li>collections</li>
+				</ul>
+			</div>
+			<div class="ct-r-b">
+				<h2>Seiko Collections</h2>
+				<ul>
+					<li>
+						<div class="coll-i">
+							<a href="#"><img src="images/collections/sub02-1.png" alt="sarw027">GPS Solar sar027</a>
+							<a href="#" class="coll-t">살펴보기</a>
+						</div>
+					</li>
+					<li>
+						<div class="coll-i">
+							<a href="#"><img src="images/collections/sub02-2.png" alt="snp157">GPS Solar snp157</a>
+							<a href="#" class="coll-t">살펴보기</a>
+						</div>
+					</li>
+					<li>
+						<div class="coll-i">
+							<a href="#"><img src="images/collections/sub02-3.png" alt="spb035">GPS Solar spb035</a>
+							<a href="#" class="coll-t">살펴보기</a>
+						</div>
+					</li>
+					<li>
+						<div class="coll-i">
+							<a href="#"><img src="images/collections/sub02-4.png" alt="spb037">GPS Solar spb037</a>
+							<a href="#" class="coll-t">살펴보기</a>
+						</div>
+					</li>
+					<li>
+						<div class="coll-i">
+							<a href="#"><img src="images/collections/sub02-5.png" alt="spb039">GPS Solar spb039</a>
+							<a href="#" class="coll-t">살펴보기</a>
+						</div>
+					</li>
+					<li>
+						<div class="coll-i">
+							<a href="#"><img src="images/collections/sub02-6.png" alt="spb041">GPS Solar spb041</a>
+							<a href="#" class="coll-t">살펴보기</a>
+						</div>
+					</li>
+					<li>
+						<div class="coll-i">
+							<a href="#"><img src="images/collections/sub02-7.png" alt="spb067">GPS Solar spb067</a>
+							<a href="#" class="coll-t">살펴보기</a>
+						</div>
+					</li>
+					<li>
+						<div class="coll-i">
+							<a href="#"><img src="images/collections/sub02-8.png" alt="srq021">GPS Solar srq021</a>
+							<a href="#" class="coll-t">살펴보기</a>
+						</div>
+					</li>
+					<li>
+						<div class="coll-i">
+							<a href="#"><img src="images/collections/sub02-9.png" alt="sse043">GPS Solar sse043</a>
+							<a href="#" class="coll-t">살펴보기</a>
+						</div>
+					</li>
+					<li>
+						<div class="coll-i">
+							<a href="#"><img src="images/collections/sub02-10.png" alt="sse055">GPS Solar sse055</a>
+							<a href="#" class="coll-t">살펴보기</a>
+						</div>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 <!-- footer -->

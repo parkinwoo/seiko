@@ -1,26 +1,51 @@
 @charset "utf-8";
 
 /* container */
-#container-wrap{width: 100%; overflow: hidden;}
-#container-l{width: 30%; height: 500px; background-color: #ccc; float: left;}
-#container-r{width: 70%; height: 500px; background-color: yellow; float: right;}
-#content-h ul{padding-top: 20px;}
-#content-h ul:after{content:""; display: block; clear: both;}
-#content-h ul > li:nth-child(1) a{font-Wsize: 16px; border-bottom: 1px solid white; margin-left: 30px;}
-#content-h ul > li:nth-child(1):after{content:">"; display: inline-block; padding-left: 15px;}
-#content-h ul > li{float: left; margin-right: 15px; font-size: 15px;}
+#container-bg{background: url(../images/main/main-visual-2.png) center 0 no-repeat; overflow: hidden;background-size:cover;}
+#container-bg .ct-l{width: 25%; height: 139vh; color: black; background-color: white;float: left; position: relative; transition:.7s;}
+#container-bg .ct-l-h{margin: 0 auto; max-width: 75%; overflow: hidden;}
+#container-bg .ct-l-h h2{font-size: 30px; margin-top: 40px; letter-spacing: 1px;}
+#container-bg .ct-l-h ul{margin-top: 30px;}
+#container-bg .ct-l-h ul li{font-size: 15px;}
+#container-bg .ct-l-h ul li:hover{background: rgba(100,100,100,.5); color: #a57f19;}
+#container-bg .ct-l-h ul li a{display: block; line-height: 50px; border-bottom: 1px solid rgba(100,100,100, .7); padding: 0 5px;}
+#container-bg .ct-r{width: 75%;float: right; transition:.7s;}
+#container-bg .ct-r-h ul{padding-top: 20px;}
+#container-bg .ct-r-h ul:after{content:""; display: block; clear: both;}
+#container-bg .ct-r-h ul > li{float: left; margin-right: 15px; font-size: 15px;}
+#container-bg .ct-r-h ul > li:nth-child(1) a{font-size: 16px; border-bottom: 1px solid white; margin-left: 60px;}
+#container-bg .ct-r-h ul > li:nth-child(1):after{content:">"; display: inline-block; padding-left: 15px;}
+#container-bg .ct-r-b h2{text-align: center; font-size: 35px; margin:30px 0;}
+#container-bg .ct-r-b ul:after{content:""; display: block; clear: both;}
+#container-bg .ct-r-b ul li{width: 20%; float: left; margin-top: 50px;}
+#container-bg .ct-r-b ul li:hover a.coll-t{background-color: white; color: #1C2024;}
+#container-bg .ct-r-b ul li a.coll-t{display: block; border:1px solid white; text-align: center; width: 100px; line-height: 30px; margin: 25px auto; letter-spacing: 1px; transition:0.7s}
+#container-bg .coll-i a{display: block; text-align: center;}
+#container-bg .coll-i a img{margin-bottom: 25px;}
+#container-bg .close{position: absolute; right: -39px; top: 0;width: 40px; height: 40px; border: 3px solid #fff; box-sizing: border-box; z-index: 10001;}
+#container-bg .close-btn{border: none; background: url(../images/collections/icon-on.png) 2px 2px no-repeat; width: 34px; height: 34px;}
 
 
 @media (max-width: 1199px){
-#content-h{display: none;}
-#content-b{margin-top: 40px;}
-
+	#container-bg .close-btn{border: none; background: url(../images/collections/icon.png) 2px 2px no-repeat;}
+	#container-bg .ct-r-b h2{margin-top: 70px;}
+	#container-bg .ct-l{width: 0%; transition:.7s; height: 109vh;}
+	#container-bg .ct-r{width: 100%; transition:.7s}
+	#container-bg .ct-r-h ul{display: none;}
+}
+@media (max-width: 900px){
+	#container-bg .ct-l{height: 107vh;}
+	#container-bg .ct-l-h h2{font-size: 20px;}
+	#container-bg .ct-l-h ul li{font-size: 13px;}
+	#container-bg .ct-r-b ul li{width: 25%;}
+	#container-bg .ct-r-b ul li:nth-child(9),#container-bg .ct-r-b ul li:nth-child(10){display: none;}
 }
 @media (max-width: 650px){
-	#content-b fieldset h2,#content-f h2{font-size: 20px;}
-	#content-b fieldset p.f-1{font-size: 18px; padding-bottom: 25px;}
-	#content-b fieldset p.f-2, #content-b fieldset p.f-3,#content-b fieldset .id-w, #content-b fieldset .pw-w, #content-b fieldset .id-pw{font-size: 13px;}
-	#content-f{margin-top: 40px}
-	#content-f p{width: 340px; margin: 0 auto;}
+	#container-bg .ct-l{height: 118vh;}
+	#container-bg .ct-l-h h2{font-size: 12px;}
+	#container-bg .ct-l-h ul li{font-size: 11px;}
+	#container-bg .ct-r-b h2{margin-top: 50px; font-size: 25px; margin-bottom: 0;}
+	#container-bg .ct-r-b ul li{width: 50%;}
+	#container-bg .ct-r-b ul li:nth-child(7),#container-bg .ct-r-b ul li:nth-child(8){display: none;}
 }
 

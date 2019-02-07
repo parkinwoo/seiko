@@ -74,7 +74,7 @@ img{width: 100%;}
 @media (max-width: 1199px){
 	#header-gnb{width: 100%; position: absolute;  z-index: 10000;}
 	#header-wrap > h1 > a{display: inline-block; float: none; text-align: center; margin-top: 0px;}
-	#header-gnb > nav > ul{padding-top: 30px; font-size: 14px; max-width: 717px; display: none;}
+	#header-gnb > nav > ul{padding-top: 30px; font-size: 14px; max-width: 718px; display: none;}
 	#header-gnb div.gnb-wrap{top: 85px;}
 	#header-gnb div.gnb-wrap > div > h2{text-align: center;}
 	#header-gnb div.gnb-wrap > div > ul{margin: 25px auto; max-width: 800px;}
