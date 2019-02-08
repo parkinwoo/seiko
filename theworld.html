@@ -10,18 +10,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   <meta name="viewport" content="width=device-width">
-  <title>SEIKOprofile</title>
+  <title>SEIKO profile</title>
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/theworld.css">
 	<script src="../js/jquery-3.3.1.min.js"></script>
 	<script>
 		$(document).ready(function(){
-			$(".visual").bxSlider({
-				minSlides: 1,
-				maxSlides: 1,
-				moveSlides: 1
-			});
 			$("ul.gnb li").eq(0).hover(function(){
 				$("ul.gnb li").eq(0).addClass("on");
 				$(".gnb-wrap").addClass("on");
@@ -161,97 +157,50 @@
 		</div>
 	</header>
 <!-- //header -->
-<!-- container -->
-	<div id="container">
-		<div id="visual-slider-list">
-				<ul class="visual">
-					<li><a href="#"><img src="images/common/visual-list-1-1.png" alt="SOLAR"></a></li>
-					<li><a href="#"><img src="images/common/visual-list-2-1.png" alt="SOLAR"></a></li>
-					<li><a href="#"><img src="images/common/visual-list-3-1.png" alt="SOLAR"></a></li>
-				</ul>
+	<div id="container-bg">
+		<div id="container">
+			<div class="ct-h">
+				<div class="ch-1">
+					<ul>
+						<li><a href="index.html">home</a></li>
+						<li>The World Seiko</li>
+					</ul>
+				</div>
+			</div>
+			<div class="ct-b">
+				<div class="ct-b-l">
+					<img src="images/theworld/world-1.png" alt="">
+				</div>
+				<div class="ct-b-r">
+					<h2>Our Heritage</h2>
+					<p class="ct-b-r-1">History of the only manufacture with every watchmaking expertise.</p>
+					<p class="ct-b-r-2">The story of Seiko began in 1881, when a 22 year old entrepreneur, Kintaro Hattori, opened a shop selling and repairing watches and clocks in central Tokyo.</p>
+					<p class="ct-b-r-3">Today, after more than 130 years of innovation, Kintaro Hattori’s company is still dedicated to the perfection that the founder always strove to achieve.</p>
+					<p class="ct-b-r-4">On the following pages you can explore Seiko’s long history and see many of our landmark watches.</p>
+				</div>
+			</div>
 		</div>
-		<div id="inr">
-			<div class="inr-wrap">
-				<h2>New Collection</h2>
+		<div id="ct-scroll">
+			<h2><img src="images/theworld/img_logo.png" alt=""></h2>
+			<div class="scroll">
+				<p><img src="images/theworld/history-icon.png" alt=""></p>
 				<ul>
-					<li><a href="#"><img src="images/main/main-inr-1-1.png" alt="Astron"></a></li>
-					<li><a href="#"><img src="images/main/main-inr-1-2.png" alt="Presage"></a></li>
-					<li><a href="#"><img src="images/main/main-inr-1-3.png" alt="Premier"></a></li>
-					<li><a href="#"><img src="images/main/main-inr-1-4.png" alt="Sports"></a></li>
+					<li>1881</li>
+					<li>1960</li>
+					<li>1980</li>
+					<li>2000</li>
+					<li>2010</li>
 				</ul>
 			</div>
 		</div>
-		<div id="content">
-			<h2>The World of Seiko</h2>
-			<div class="content-wrap">
-				<ul>
-					<li class="ct-1"><a href="#">
-						<div class="card">
-							<div class="card-body">
-								<h3 class="card-title">Baselworld 2019</h3>
-								<p class="card-text">새로운 모델들과 생생한 소식을<br>확인해보세요.</p>
-								<p class="card-btn">Learn more</p>
-							</div>
-						</div>
-					</a></li>
-					<li class="ct-2"><a href="#">
-						<div class="card">
-							<div class="card-body">
-								<h3 class="card-title">History</h3>
-								<p class="card-text">글로벌 시계 산업을 이끌어 가는 세이코와<br>세이코 제품에 대한 역사</p>
-								<p class="card-btn">Learn more</p>
-							</div>
-						</div>
-					</a></li>
-					<li class="ct-3"><a href="#">
-						<div class="card">
-							<div class="card-body">
-								<h3 class="card-title">Technology</h3>
-								<p class="card-text">세이코는 감성적 기술을 개발하는데<br>집중합니다.</p>
-								<p class="card-btn">Learn more</p>
-							</div>
-						</div>
-					</a></li>
-					<li class="ct-4"><a href="#">
-						<div class="card">
-							<div class="card-body">
-								<h3 class="card-title">Seiko TV</h3>
-								<p class="card-text">세이코에 대한 더 많은 체험이 기다리고<br>있습니다.</p>
-								<p class="card-btn">Learn more</p>
-							</div>
-						</div>
-					</a></li>
-					<li class="ct-5"><a href="#">
-						<div class="card">
-							<div class="card-body">
-								<h3 class="card-title">Discoveries</h3>
-								<p class="card-text">세이코의 identity를 실천하는<br> 사람들의 기록입니다.</p>
-								<p class="card-btn">Learn more</p>
-							</div>
-						</div>
-					</a></li>
-					<li class="ct-6"><a href="#">
-						<div class="card">
-							<div class="card-body">
-								<h3 class="card-title">Around the World</h3>
-								<p class="card-text">전셰게 세이코의 소식을<br>들어보세요.</p>
-								<p class="card-btn">Learn more</p>
-							</div>
-						</div>
-					</a></li>
-				</ul>
-			</div>
-		</div>
-		<div id="bg-story">
-			<div class="text-wrap">
-				<p class="info">THE GRAND SEIKO STORY</p>
-				<p class="title">그랜드 세이코. 미래를 담은 10가지 이야기</p>
-				<p class="text">1960년 그랜드 세이코의 탄생부터 시작된 세계 최고의 시계가 되기 위한 끊임없는 노력의 역사<br>과거와 현재를 이어 미래로 나아가는 이야기 입니다.</p>
-				<p class="btn"><a href="#">MORE</a></p>
-			</div>
+		<div id="seiko-h">
+			<div class="year y-1881">1881-1959</div>
+			<div class="year y-1960">1960-1979</div>
+			<div class="year y-1980">1980-1999</div>
+			<div class="year y-2000">2000-2009</div>
+			<div class="year y-2010">2010-2019</div>
 		</div>
 	</div>
-<!-- //container -->
 <!-- footer -->
 	<div id="footer">
 		<div id="footer-wrap">
