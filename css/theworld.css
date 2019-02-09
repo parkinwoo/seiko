@@ -18,7 +18,7 @@
 #ct-scroll{background-color: black; top: 0; width: 100%;}
 #ct-scroll h2{width: 128px; height: 42px; padding: 30px 0; margin: 20px auto; margin-top: 0;}
 #ct-scroll .scroll{max-width: 1200px;padding: 10px; margin: 0 auto; position: relative;}
-#ct-scroll p{width: 16px; height: 20px; margin-bottom: 5px; margin-left: 8px;}
+#ct-scroll p{width: 16px; height: 20px; margin-bottom: 5px; margin-left: 9px; /* transition:1s */}
 #ct-scroll ul:after{content:""; display: block; clear: both;}
 #ct-scroll ul li{float: left; width: 20%; color: #aaa;}
 #ct-scroll ul li:hover{color: white}
