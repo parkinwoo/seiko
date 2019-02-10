@@ -25,11 +25,11 @@
 #ct-scroll ul li:after{content: ""; display: inline-block; width: 180px; height: 3px; background: white; vertical-align: middle; margin-left: 10px;}
 #ct-scroll ul li span{cursor: pointer;}
 #seiko-h .year{text-align: center; line-height: 250px; font-size: 40px;}
-#seiko-h .y-1881{background: url(../images/theworld/bg-y-1.jpg) center 0 no-repeat;}
-#seiko-h .y-1960{background: url(../images/theworld/bg-y-2.jpg) center 0 no-repeat;}
-#seiko-h .y-1980{background: url(../images/theworld/bg-y-3.jpg) center 0 no-repeat;}
-#seiko-h .y-2000{background: url(../images/theworld/bg-y-4.jpg) center 0 no-repeat;}
-#seiko-h .y-2010{background: url(../images/theworld/bg-y-5.jpg) center 0 no-repeat;}
+#seiko-h .y-1881{background: url(../images/theworld/bg-y-1.jpg) center 0 no-repeat; background-size: cover;}
+#seiko-h .y-1960{background: url(../images/theworld/bg-y-2.jpg) center 0 no-repeat; background-size: cover;}
+#seiko-h .y-1980{background: url(../images/theworld/bg-y-3.jpg) center 0 no-repeat; background-size: cover;}
+#seiko-h .y-2000{background: url(../images/theworld/bg-y-4.jpg) center 0 no-repeat; background-size: cover;}
+#seiko-h .y-2010{background: url(../images/theworld/bg-y-5.jpg) center 0 no-repeat; background-size: cover;}
 #seiko-h .ht-l, #seiko-h .ht-r{overflow: hidden; color: black;}
 .ht-l img{float: left; width: 40%; height: 350px;}
 .ht-r img{float: right; width: 40%; height: 350px;}
