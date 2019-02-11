@@ -57,6 +57,10 @@
 					$btnNum = 0;
 				}
 			});
+			$(window).resize(function(){
+				var h = $("#container-bg .ct-r").height();
+				$("#container-bg .ct-l").css("height",h);
+			});
 		});
 	</script>
   </head>

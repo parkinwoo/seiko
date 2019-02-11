@@ -87,7 +87,7 @@ img{width: 100%;}
 	.gnb-btn{display: block;}
 }
 @media (max-width: 900px){
-	#header-gnb > nav > ul{font-size: 12px; max-width: 579px;}
+	#header-gnb > nav > ul{font-size: 12px; max-width: 480px;}
 	#header-gnb > nav > ul > li{margin-left: 20px;}
 	#footer-wrap > ul > li.f-s3{display: none;}
 	#footer-wrap > ul > li{width: 33%;}
@@ -99,4 +99,8 @@ img{width: 100%;}
 	#header-gnb > nav > ul > li:nth-child(4),#header-gnb > nav > ul > li:nth-child(5),#header-gnb > nav > ul > li:nth-child(6){display: none;}
 	#header-util > ul > li:nth-child(1),#header-util > ul > li:nth-child(2){display: none;}
 	#footer-wrap > ul > li > h3,#footer-wrap > ul > li > ul{display: none;}
+}
+@media (max-width: 450px){
+	#header-gnb > nav > ul{font-size: 11px; max-width: 258px;}
+	#header-gnb > nav > ul > li{margin-left: 15px;}
 }
