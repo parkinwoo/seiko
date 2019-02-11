@@ -14,8 +14,8 @@ img{width: 100%;}
 #header-util > ul > li{float: left; margin-right: 20px; color: #fff; height: 30px; width: 40px;}
 #header-util > ul > li > a{display: block; line-height: 20px; margin-top: -20px;}
 #header-util > ul > li > button{border: none; background: none; margin-top: 20px;}
-#header-util > ul > li:hover > a{margin-top: 0;}
-#header-util > ul > li:hover > button{margin-top: 0;}
+#header-util > ul > li > a > p{width: 24px; margin: 20px auto 0;}
+#header-util > ul > li:hover > a,#header-util > ul > li:hover > button,#header-util > ul > li:hover > a > p{margin-top: 0;}
 #header-wrap > h1 > a{display: block; width: 150px; font-size: 27px; float: left; background: url(../images/common/main-logo.png) 0 0 no-repeat; text-indent: -9999px; margin-top: 5px; } 
 #header-language{max-width: 1200px; margin: 0 auto; position: relative;}
 #header-language .language{position: absolute;top: 15px; z-index: 2; right: 28px;color: white; width: 200px; background-color: black; border: 5px solid white;display: none;}
@@ -82,7 +82,7 @@ img{width: 100%;}
 	#header-gnb div.gnb-wrap > div > ul > li:nth-child(6),#header-gnb div.gnb-wrap > div > ul > li:nth-child(7){display: none;}
 	#header-util > ul > li{padding-top: 20px;}
 	#header-util > ul > li > a{margin-top: -50px;}
-	#header-util > ul > li > button{margin-top: 50px;}
+	#header-util > ul > li > button,#header-util > ul > li > a > p{margin-top: 50px;}
 	#header-language .language{top: 35px;}
 	.gnb-btn{display: block;}
 }

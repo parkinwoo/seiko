@@ -40,18 +40,17 @@
 			});
 			$(".gnb-btn").click(function(){
 				$(this).toggleClass("on");
-				$('#header-gnb > nav > ul').toggleClass("on");
+				$("#header-gnb > nav > ul").toggleClass("on");
 			});
 			$(window).on("scroll",function(){
 				var scroll = window.pageYOffset;
 				var cH = (scroll-732);
 				var scrMove = 1250*cH/6854;
 				console.log(cH);
-
 				if (scroll>724){
-					$('#ct-scroll p').css('margin-left',scrMove+9);
+					$("#ct-scroll p").css("margin-left",scrMove+9);
 				} else{
-					$('#ct-scroll p').css('margin-left',9);
+					$("#ct-scroll p").css("margin-left",9);
 				}
 				console.log(scroll);
 				if (scroll>750){
@@ -61,11 +60,6 @@
 					$("#ct-scroll").css("position","static");
 					$("#seiko-h").css("margin-top",0);
 				};
-				//if (scroll > 2066){
-				//	$("#ct-scroll p").css("margin-left","247px");
-				//} else {
-				//	$("#ct-scroll p").css("margin-left","9px");
-				//}
 			});
 		});
 		function fnMove(num){
@@ -91,10 +85,8 @@
 							<img src="images/common/musica-searcher-2.png" alt="search">
 						</button>
 					</li>
-					<li><a href="profile.html">프로필</a>
-						<button><a href="profile.html">
-							<img src="images/common/musica-searcher-3.png" alt="prefile">
-						</button></a>
+					<li>
+						<a href="profile.html">프로필<p><img src="images/common/musica-searcher-3.png" alt="prefile"></p></a>
 					</li>
 				</ul>
 			</div>
