@@ -10,7 +10,7 @@
 #container .ct-h ul > li{float: left; margin-right: 15px; font-size: 15px;}
 #container .ct-b{overflow: hidden; margin:40px 0;}
 #container .ct-b-l{float: left; max-width: 500px;}
-#container .ct-b-r{float: right; max-width: 700px; font-size: 22px;}
+#container .ct-b-r{float: right; max-width: 680px; font-size: 22px;}
 #container .ct-b-r h2{font-size: 50px; letter-spacing: 2px; padding-top: 30px; padding-bottom: 10px; color: #fff;}
 #container .ct-b-r p{margin-bottom: 35px; color: #ababab;}
 #container .ct-b-r p.ct-b-r-1{color: #fff !important;}
@@ -45,9 +45,43 @@
 
 
 @media (max-width: 1199px){
-
+	#container .ct-b{margin: 0; padding-top: 40px;}
+	#container .ct-b-l{max-width: 50%;}
+	#container .ct-b-r{max-width: 50%; font-size: 18px;}
+	#container .ct-b-r h2{padding-top: 0; font-size: 35px;}
+	#ct-scroll,#container .ct-h ul{display: none;}
+	.ht-yb{font-size: 40px;}
+	.ht-tb h3{font-size: 20px; padding: 30px 0;}
+	.ht-tb p{font-size: 15px;}
+}
+@media (max-width: 900px){
+	#container .ct-b-r{font-size: 15px;}
+	#container .ct-b-r p{margin-bottom: 20px;}
+	#container .ct-b-r p.ct-b-r-1:after{margin-top: 25px;}
+	#ct-scroll,#container .ct-h ul{display: none;}
+	#seiko-h .y-1881{margin-top: 60px;}
+	.ht-l img,.ht-r img,.ht-tw{height: 300px;}
+	.ht-yb{font-size: 35px; line-height: 300px;}
+	.ht-tb h3{font-size: 17px; padding: 20px 0;}
+	.ht-tb p{font-size: 13px;}
 }
 @media (max-width: 650px){
-
+	#container .ct-b-l{max-width: 35%; padding-top: 100px;}
+	#container .ct-b-r{max-width: 65%; padding: 40px 40px 0 40px; font-size: 12px;}
+	#container .ct-b-r h2{font-size: 30px;}
+	#container .ct-b-r p.ct-b-r-1:after{width: 100%; margin-left: 0;}
+	.ht-l img, .ht-r img,.ht-tw{height: 194px;}
+	.ht-yb{line-height: 194px; font-size: 30px;}
+	.ht-tw{padding: 5px;}
+	.ht-tb h3{font-size: 13px; padding: 10px 0;}
+	.ht-tb p{font-size: 12px;}
+}
+@media (max-width: 500px){
+	#container .ct-b-l{max-width: 100%; padding-top: 0;}
+	#container .ct-b-r{max-width: 100%; font-size: 15px;}
+	p.ct-b-r-1 ~ p{display: none;}
+	#seiko-h .y-1881{margin-top: 0;}
+	.ht-yb{display: none;}
+	.ht-tw{padding: 10px; width: 60%;}
 }
 

@@ -46,8 +46,8 @@
 #content .content-wrap p.card-btn{display: none; width: 100px;margin: 0 auto; padding: 2px;}
 #content .content-wrap > ul > li:hover h3.card-title,#content .content-wrap > ul > li:focus h3.card-title{padding-top: 250px; transition: .7s}
 #content .content-wrap > ul > li:hover p.card-btn,#content .content-wrap > ul > li:focus p.card-btn{display: block; border: 1px solid #fff;}
-#bg-story{margin: 75px 0; font-size: 20px; text-shadow:1px 1px 1px #292929;}
-#bg-story .text-wrap{max-width: 1200px;min-height: 540px; margin: 0 auto; background: url(../images/main/seiko-1.png) 0 0 no-repeat; text-align: center; letter-spacing: 2px;}
+#bg-story{margin: 50px 0; font-size: 20px; text-shadow:1px 1px 1px #292929;background: url(../images/main/seiko-1.png) center; background-size:cover;}
+#bg-story .text-wrap{max-width: 1200px;min-height: 540px; margin: 0 auto; text-align: center; letter-spacing: 2px;}
 #bg-story p.info{padding-top: 170px; padding-bottom: 5px; font-size: 16px; letter-spacing: 3px;}
 #bg-story p.title{margin-bottom: 30px;}
 #bg-story p.title:after{content:""; display: block; width: 90px; height: 2px; background-color: white; margin: 0 auto; margin-top: 30px;}
